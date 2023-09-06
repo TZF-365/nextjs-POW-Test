@@ -4,13 +4,19 @@ import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
 import { benefitOne, benefitTwo } from "../components/data";
-import Video from "../components/video";
+import Back from "../components2/back";
+import Video2 from "../components2/video2";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import Courses from '../components2/Courses';
+
+
+
+
 
 const Home = () => {
   return (
@@ -19,7 +25,7 @@ const Home = () => {
         <title> POW Principles of Wealth</title>
         <meta
           name="description"
-          content="Principles Of Wealth"
+          content="POW"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -29,7 +35,7 @@ const Home = () => {
       <SectionTitle
         pretitle="Benefits of POW"
         title=" Why should you be involved with POW">
-        You should be involved with POW because.
+        You should be involved with POW becausejjj.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -38,7 +44,19 @@ const Home = () => {
         title="Watch this video about who we are as a team">
         A preview of the POW Courses.
       </SectionTitle>
-      <Video />
+      <h1>Welcome to our Courses</h1>
+      <Video2 />
+      <Courses />
+
+
+    <div>
+      <Back />
+      <div className="content">
+        {/* Your page content goes here */}
+      </div>
+    </div>
+
+
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our members have  said">

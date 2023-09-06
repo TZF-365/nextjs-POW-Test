@@ -1,12 +1,16 @@
-import '../styles/globals.css';
-import 'prismjs/themes/prism-tomorrow.css';
+import { ThemeProvider } from "next-themes";
+import "../css/tailwind.css";
+import "../css/global.css";
+import '../css/CourseList.css';
+import '../css/CourseCard.css';
+import '../css/Overlay.css';
+
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <span className="theme-bejamas" />
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 

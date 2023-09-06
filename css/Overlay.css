@@ -1,0 +1,14 @@
+/* styles/Overlay.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity and color as needed */
+  z-index: 999; /* Place it above other content */
+  pointer-events: none; /* Prevent interactions with underlying content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

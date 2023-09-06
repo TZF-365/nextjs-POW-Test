@@ -1,0 +1,27 @@
+/* styles/CourseList.css */
+.course-list {
+  list-style: none;
+  padding: 0;
+}
+
+.course-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.course-description {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.course-item:hover .course-description {
+  display: block;
+}

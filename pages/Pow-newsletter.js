@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
 import { benefitOne, benefitTwo } from "../components/data";
+import Back from "../components2/back";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
@@ -12,6 +13,8 @@ import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 
+
+
 const Home = () => {
   return (
     <>
@@ -19,17 +22,16 @@ const Home = () => {
         <title> POW Principles of Wealth</title>
         <meta
           name="description"
-          content="Principles Of Wealth"
+          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      <Hero />
       <SectionTitle
         pretitle="Benefits of POW"
         title=" Why should you be involved with POW">
-        You should be involved with POW because.
+        You should be involved with POW becausejjj.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -39,6 +41,15 @@ const Home = () => {
         A preview of the POW Courses.
       </SectionTitle>
       <Video />
+      <Video />
+
+    <div>
+      <Back />
+      <div className="content">
+        {/* Your page content goes here */}
+      </div>
+    </div>
+
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our members have  said">
